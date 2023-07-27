@@ -51,6 +51,9 @@
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All fruits</a></li>
+                        <div class="form-control relative">
+                            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full"/>
+                          </div>
                     </ul>
                   </div>
                 <div class="form-control relative hidden min-[990px]:block">
@@ -180,7 +183,12 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                       <div class="card-actions">
-                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                        <!-- modal start -->
+                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl"> Details
+
+                        </a>
+
+                        <!-- modal end -->
                       </div>
                     </div>
                   </div>
@@ -348,7 +356,7 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5">
                         <img src="./images/fruits-pear-svgrepo-com.svg" alt="">
                         <div class="flex flex-col justify-center items-center lg:items-start">
-                            <h1 class="text-xl text-center">Dedicated Team</h1>
+                            <h1 class="text-xl">Dedicated Team</h1>
                             <hr class="w-28 h-[2px] bg-gray-400">
                             <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -364,7 +372,7 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5">
                         <img src="./images/like-svgrepo-com.svg" alt="">
                         <div class="flex flex-col justify-center items-center lg:items-start">
-                            <h1 class="text-xl text-right">Dedicated Team</h1>
+                            <h1 class="text-xl">Dedicated Team</h1>
                             <hr class="w-28 h-[2px] bg-gray-400">
                             <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -373,6 +381,31 @@
             </div>
         </div>
     </main>
-
+    <footer class="mt-6 w-full h-80 bg-slate-900">
+        <div class="max-w-7xl mt-4 mx-auto">
+            
+            <div class="flex justify-center items-center gap-4 pt-8">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-3xl text-yellow-500">Fresh Fruits</h1>
+            </div>
+            <div class="text-white flex flex-col lg:flex-row my-4 space-x-6 justify-center items-center">
+                <div class="flex gap-4">
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Shop</p>
+                    <p>All fruits</p>
+                </div>
+                <div class="flex gap-4">
+                    <p>Support</p>
+                    <p>My Account</p>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center items-center">
+                <img src="./images/facebook-svgrepo-com.svg" alt="">
+                <img src="./images/social-youtube-svgrepo-com (1).svg" alt="">
+                <img src="./images/twitter-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
