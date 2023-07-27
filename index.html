@@ -106,6 +106,7 @@
                 <button class="mt-4 px-6 py-3 bg-yellow-500 text-white font-semibold rounded">Explore More</button>
               </div>
         </div>
+        <!-- showcase -->
         <div class="max-w-5xl mx-auto mt-10 pl- mb-10 lg:relative">
             <div class="hidden lg:grid lg:grid-cols-5 shadow-xl drop-shadow-xl space-y-4 py-4 rounded-xl bg-slate-200 lg:absolute lg:left-28 lg:bottom-0">
                 <div class="flex flex-col items-center justify-center">
@@ -143,19 +144,19 @@
                           <span class="countdown font-mono text-4xl">
                             <span style="--value:15;"></span>
                           </span>
-                          days
+                         <span class="border-r-4 border-dotted border-yellow-400 pr-5"> days</span>
                         </div> 
                         <div>
                           <span class="countdown font-mono text-4xl">
                             <span style="--value:10;"></span>
                           </span>
-                          hours
+                          <span class="border-r-4 border-dotted border-yellow-400 pr-5"> Hours</span>
                         </div> 
                         <div>
                           <span class="countdown font-mono text-4xl">
                             <span style="--value:24;"></span>
                           </span>
-                          min
+                          <span class="border-r-4 border-dotted border-yellow-400 pr-5"> min</span>
                         </div> 
                         <div>
                           <span class="countdown font-mono text-4xl">
@@ -184,14 +185,42 @@
                       </div>
                       <div class="card-actions">
                         <!-- modal start -->
-                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl"> Details
+                        <!-- card one model setup start -->
 
-                        </a>
-
+                      <!-- Open the modal using ID.showModal() method -->
+                      <a onclick="my_modal_1.showModal()" class="btn btn-ghost normal-case text-yellow-500 text-xl"> Details</a>
+                      <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box">
+                          <div class="card">
+                            <figure class="px-2 pt-2">
+                              <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title border-b-2 pb-3 border-gray-300">$13.20 - $17.45</h2>
+                              <p>promagnet</p>
+                              <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                            <button class="btn">Buy Now</button>
+                          </div>
+                        </form>
+                      </dialog>
+                <!-- card one model setup End -->
                         <!-- modal end -->
                       </div>
                     </div>
                   </div>
+                  <!-- card 2 -->
+               
                 <div class="card lg:bg-white bg-yellow-50 shadow-xl pl-2">
                     <figure class="px-10 pt-10">
                       <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -207,10 +236,45 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                       <div class="card-actions">
-                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <a onclick="my_modal_2.showModal()" class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                        <dialog id="my_modal_2" class="modal">
+                          <form method="dialog" class="modal-box">
+                            
+                            
+                            <div class="card">
+                              <figure class="px-2 pt-2">
+                                <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title border-b-2 pb-3 border-gray-300">$13.00 - $16.35</h2>
+                                <p>Apple</p>
+                                <div class="rating">
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn">Buy Now</button>
+                            </div>
+                          </form>
+                        </dialog>
+                        
                       </div>
                     </div>
                   </div>
+
+                  <!-- card 2 -->
+              
+                  <!-- card 3 -->
+               
                 <div class="card lg:bg-white bg-yellow-50 shadow-xl pl-2">
                     <figure class="px-10 pt-10">
                       <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
@@ -226,10 +290,43 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                       <div class="card-actions">
-                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <a onclick="my_modal_3.showModal()" class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                        <dialog id="my_modal_3" class="modal">
+                          <form method="dialog" class="modal-box">
+                           
+                            <div class="card">
+                              <figure class="px-2 pt-2">
+                                <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                              </figure>
+                              <div class="card-body items-center text-center">
+                                <h2 class="card-title border-b-2 pb-3 border-gray-300">$15.00 - $16.35</h2>
+                                <p>Orange</p>
+                                <div class="rating">
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn">Buy Now</button>
+                            </div>
+                          </form>
+                        </dialog>
+                        
                       </div>
                     </div>
                   </div>
+
+                  
+                  <!-- card 4 -->
+               
                 <div class="card lg:bg-white bg-yellow-50 shadow-xl pl-2">
                     <figure class="px-10 pt-10">
                       <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
@@ -245,17 +342,51 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                       </div>
                       <div class="card-actions">
-                        <a class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <a onclick="my_modal_4.showModal()" class="btn btn-ghost normal-case text-yellow-500 text-xl">Details</a>
+                      <dialog id="my_modal_4" class="modal">
+                        <form method="dialog" class="modal-box">
+                          
+                          <div class="card">
+                            <figure class="px-2 pt-2">
+                              <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title border-b-2 pb-3 border-gray-300">$10.00 - $11.35</h2>
+                              <p>Red Dragon</p>
+                              <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                            <button class="btn">Buy Now</button>
+                          </div>
+                        </form>
+                      </dialog>
+
+                        
                       </div>
                     </div>
                   </div>
+
+                   <!-- card 4 end-->
             </div>
             <div class="flex justify-center items-center mt-10 px-4">
                 <button class="btn btn-wide bg-yellow-400 hover:bg-red-300  text-white">Show All</button>
             </div>
            
         </div>
+
         <!-- clints section -->
+
         <div class="max-w-7xl mx-auto mb-10">
             <div class="hero lg:h-[80vh]" style="background-image: url('./images/team.png');">
                 <div class="hero-overlay bg-opacity-60"></div>
@@ -356,25 +487,31 @@
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5">
                         <img src="./images/fruits-pear-svgrepo-com.svg" alt="">
                         <div class="flex flex-col justify-center items-center lg:items-start">
-                            <h1 class="text-xl">Dedicated Team</h1>
-                            <hr class="w-28 h-[2px] bg-gray-400">
-                            <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          <div>
+                            <h1 class="text-xl text-center lg:text-right">Dedicated Team</h1>
+                          <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
+                          <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5">
                         <img src="./images/ice-cream-svgrepo-com.svg" alt="">
                         <div class="flex flex-col justify-center items-center lg:items-start">
-                            <h1 class="text-xl">Dedicated Team</h1>
-                            <hr class="w-28 h-[2px] bg-gray-400">
-                            <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          <div>
+                            <h1 class="text-xl text-center lg:text-right">Dedicated Team</h1>
+                          <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
+                          <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          </div>
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row-reverse items-center gap-2 lg:gap-5">
                         <img src="./images/like-svgrepo-com.svg" alt="">
                         <div class="flex flex-col justify-center items-center lg:items-start">
-                            <h1 class="text-xl">Dedicated Team</h1>
-                            <hr class="w-28 h-[2px] bg-gray-400">
+                            <div>
+                              <h1 class="text-xl text-center lg:text-right">Dedicated Team</h1>
+                            <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
                             <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -383,8 +520,8 @@
     </main>
     <footer class="mt-6 w-full h-80 bg-slate-900">
         <div class="max-w-7xl mt-4 mx-auto">
-            
-            <div class="flex justify-center items-center gap-4 pt-8">
+            <div class="flex flex-col items-center justify-center">
+              <div class="flex justify-center items-center gap-4 pt-8">
                 <img src="images/logo.png" alt="">
                 <h1 class="text-3xl text-yellow-500">Fresh Fruits</h1>
             </div>
@@ -404,6 +541,7 @@
                 <img src="./images/facebook-svgrepo-com.svg" alt="">
                 <img src="./images/social-youtube-svgrepo-com (1).svg" alt="">
                 <img src="./images/twitter-svgrepo-com.svg" alt="">
+            </div>
             </div>
         </div>
     </footer>
