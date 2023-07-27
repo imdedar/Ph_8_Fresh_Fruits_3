@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -20,7 +21,7 @@
     <title>Fresh Fruits</title>
 </head>
 <body>
-    <header class="max-w-7xl mx-auto pl-4">
+    <header class="max-w-7xl mx-auto pl-4 mr-2">
         <div class="navbar mt-10 bg-yellow-400 rounded-full py-4">
             <div class="navbar-start">
                 <div class="lg:hidden flex items-center">
@@ -42,9 +43,11 @@
                 <a class="btn btn-ghost normal-case text-3xl font-bold text-white max-[990px]:hidden">Fresh Fruits</a>
             </div>
             <div class="navbar-end">
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      <button class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                      </button>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
@@ -69,7 +72,7 @@
       
     </header>
     <main>
-        <div class="max-w-7xl mx-auto mt-10 mb-10 pl-4 relative">
+        <div class="max-w-7xl mx-auto mt-10 mb-10 pl-4 relative mr-2">
             <div class="carousel w-full relative">
                 <div id="slide1" class="carousel-item relative w-full lg:h-[500px]"> 
                   <img src="./images/banner1.png" class="w-full brightness-50" />
@@ -138,28 +141,28 @@
                     <p class="text-slate-500 text-center lg:text-left ">"Don't miss our delightful 'Deal of the Day' <br>
                     on fresh, hand-picked fruits"</p>
                 </div>
-                <div class="mt-4 pl-2">
+                <div class="mt-4 pl-2 lg:mx-0 mx-6">
                     <div class="flex gap-5">
                         <div>
-                          <span class="countdown font-mono text-4xl">
+                          <span class="countdown font-mono text-2xl lg:text-4xl">
                             <span style="--value:15;"></span>
                           </span>
                          <span class="border-r-4 border-dotted border-yellow-400 pr-5"> days</span>
                         </div> 
                         <div>
-                          <span class="countdown font-mono text-4xl">
+                          <span class="countdown font-mono text-2xl lg:text-4xl">
                             <span style="--value:10;"></span>
                           </span>
                           <span class="border-r-4 border-dotted border-yellow-400 pr-5"> Hours</span>
                         </div> 
                         <div>
-                          <span class="countdown font-mono text-4xl">
+                          <span class="countdown font-mono text-2xl lg:text-4xl">
                             <span style="--value:24;"></span>
                           </span>
                           <span class="border-r-4 border-dotted border-yellow-400 pr-5"> min</span>
                         </div> 
                         <div>
-                          <span class="countdown font-mono text-4xl">
+                          <span class="countdown font-mono text-2xl lg:text-4xl">
                             <span style="--value:50;"></span>
                           </span>
                           sec
@@ -168,7 +171,7 @@
                 </div>
             </div>
             <!-- card -->
-            <div class="grid lg:grid-cols-4 gap-4 mt-10">
+            <div class="grid lg:grid-cols-4 gap-4 mt-10 mx-8 lg:mx-1">
                 <div class="card lg:bg-white bg-yellow-50 shadow-xl pl-2">
                     <figure class="px-10 pt-10">
                       <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
@@ -387,7 +390,7 @@
 
         <!-- clints section -->
 
-        <div class="max-w-7xl mx-auto mb-10">
+        <div class="max-w-7xl mx-auto mb-10 px-4 lg:px-0">
             <div class="hero lg:h-[80vh]" style="background-image: url('./images/team.png');">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content flex flex-col">
@@ -448,7 +451,7 @@
         <div class="max-w-7xl mt-4 mb-20 mx-auto">
             <div>
                 <h1 class="text-3xl lg:text-5xl text-center text-yellow-500">Why Choose Us</h1>
-                <p class="text-center text-slate-400 mt-4">Join us in celebrating the dedication and <br> expertise of our fruits store, as we continue our mission to bring you <br> the best nature has to offer</p>
+                <p class="text-center text-slate-400 mt-4">Join us in celebrating the dedication and expertise of our  <br> fruits store as we continue our mission to bring <br> you the best nature has to offer</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
                 <!-- ist items -->
@@ -458,7 +461,7 @@
                         <div class="flex flex-col justify-center items-center lg:items-start">
                             <h1 class="text-xl">Dedicated Team</h1>
                             <hr class="w-28 h-[2px] bg-gray-400">
-                            <p class="lg:text-left text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="lg:text-left text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
@@ -466,7 +469,7 @@
                         <div class="flex flex-col justify-center items-center lg:items-start">
                             <h1 class="text-xl">Fresh is Best</h1>
                             <hr class="w-28 h-[2px] bg-gray-400">
-                            <p class="lg:text-left text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="lg:text-left text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex flex-col items-center lg:flex-row gap-2 lg:gap-5">
@@ -474,7 +477,7 @@
                         <div class="flex flex-col justify-center items-center lg:items-start">
                             <h1 class="text-xl">Gift Certificates</h1>
                             <hr class="w-28 h-[2px] bg-gray-400">
-                            <p class="lg:text-left text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="lg:text-left text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
@@ -490,7 +493,7 @@
                           <div>
                             <h1 class="text-xl text-center lg:text-right">Integrated Supplier</h1>
                           <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
-                          <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          <p class="lg:text-right text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                           </div>
                         </div>
                     </div>
@@ -500,7 +503,7 @@
                           <div>
                             <h1 class="text-xl text-center lg:text-right">Sustainable Practice</h1>
                           <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
-                          <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          <p class="lg:text-right text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                           </div>
                         </div>
                     </div>
@@ -510,7 +513,7 @@
                             <div>
                               <h1 class="text-xl text-center lg:text-right">The Benefits Only</h1>
                             <hr class="w-28 h-[2px] bg-gray-400 mx-auto lg:ml-[15rem]">
-                            <p class="lg:text-right text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="lg:text-right text-center px-10 lg:px-0">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                             </div>
                         </div>
                     </div>
